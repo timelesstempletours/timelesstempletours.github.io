@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0a09">
-  <meta name="description" content="Explore Luxor's temples, Nile journeys, and sunrise skies with Timeless Temple Tours — a fictional family tour company from Search for the Lost Pyramidion.">
-  <title>Timeless Temple Tours | Luxor · Egypt</title>
-  <!-- Homepage v2: revised copy, centered wordmark, updated tour illustration framing -->
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0b0a09" name="theme-color"/>
+<meta content="Discover the people, places, and family heritage of Timeless Temple Tours in Luxor, Egypt. A fictional travel company from Search for the Lost Pyramidion." name="description"/>
+<title>Timeless Temple Tours | Luxor · Egypt</title>
+<!-- Homepage v2: revised copy, centered wordmark, updated tour illustration framing -->
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
     :root{--black:#0b0a09;--ink:#29251e;--paper:#fbf8f2;--sand:#f0e7d7;--deep-sand:#e2d3ba;--gold:#c99a3c;--light-gold:#f2d48a;--soft:#756c5e;--line:#dfd3bd;--serif:'Libre Baskerville',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:108px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #e0a345;outline-offset:4px}::selection{background:#e3bc70;color:#17110b}
     .container{width:min(1180px,calc(100% - 64px));margin-inline:auto}.skip{position:absolute;left:-10000px;top:auto;background:white;color:black;padding:12px;z-index:100}.skip:focus{left:15px;top:15px}
@@ -39,53 +40,72 @@
     .tour-felucca .tour-img,.tour-balloon .tour-img{background:#17110d}.tour-felucca .tour-img>img,.tour-balloon .tour-img>img{height:193px;object-fit:cover}.tour-felucca .tour-img:after,.tour-balloon .tour-img:after{background:linear-gradient(0deg,#17110d 0%,#17110d 20%,transparent 24%)}
     .mini-profiles{gap:25px}.mini-profiles .team-small{margin-top:9px}
     @media(max-width:720px){.tour-img{height:245px}.tour-karnak .tour-img>img{object-position:50% 0%}}
-  </style>
+  
+/* v3 - guide portraits and heritage gallery link */
+.team .team-grid{align-items:center}
+.team .team-copy .team-link{margin-top:14px}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:56px}
+.guide-card{background:#fffdfa;border:1px solid var(--line);box-shadow:0 10px 26px rgba(70,49,20,.06);overflow:hidden;display:flex;flex-direction:column}
+.guide-pic{background:#d9c4a5;height:250px;overflow:hidden}
+.guide-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.guide-card:nth-child(1) .guide-pic img{object-position:50% 12%}
+.guide-card:nth-child(2) .guide-pic img{object-position:50% 15%}
+.guide-card:nth-child(3) .guide-pic img{object-position:50% 24%}
+.guide-copy{padding:23px 25px 28px}
+.guide-copy h3{font:400 27px var(--serif);margin:0 0 2px}
+.guide-role{display:block;font-size:10px;line-height:1.7;color:#96713c;text-transform:uppercase;font-weight:700;letter-spacing:1.5px}
+.guide-copy p{font-size:13px;line-height:1.85;color:#73675a;margin:11px 0 0}
+.heritage-gallery-button{margin-top:25px}
+@media(max-width:800px){.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.guide-grid{grid-template-columns:1fr;margin-top:39px}.guide-card{display:grid;grid-template-columns:35% 1fr;align-items:stretch}.guide-pic{height:auto;min-height:230px}.guide-copy{padding:19px}.guide-copy h3{font-size:23px}}
+@media(max-width:400px){.guide-card{display:block}.guide-pic{height:210px}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
-  <div class="container">
-    <a class="brand" href="#top" aria-label="Timeless Temple Tours, back to top"><img class="brand-icon" src="assets/ttt-mark.webp" alt="" width="100" height="55"><span class="brand-copy"><span class="brand-name">TIMELESS</span><span class="brand-sub">TEMPLE TOURS <span aria-hidden="true">·</span> LUXOR</span></span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">MENU ☰</button>
-    <nav class="nav" id="primary-navigation" aria-label="Main navigation"><a href="#tours">Our tours</a><a href="#team">Our people</a><a href="#heritage">Our heritage</a><a href="#about">About us</a></nav>
-  </div>
+<div class="container">
+<a aria-label="Timeless Temple Tours, back to top" class="brand" href="#top"><img alt="" class="brand-icon" height="55" src="assets/ttt-mark.webp" width="100"/><span class="brand-copy"><span class="brand-name">TIMELESS</span><span class="brand-sub">TEMPLE TOURS <span aria-hidden="true">·</span> LUXOR</span></span></a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" type="button">MENU ☰</button>
+<nav aria-label="Main navigation" class="nav" id="primary-navigation"><a href="#tours">Our tours</a><a href="#team">Our people</a><a href="#heritage">Our heritage</a><a href="gallery.html">Heritage gallery</a><a href="#about">About us</a></nav>
+</div>
 </header>
 <main id="main">
-  <section id="top" class="hero" aria-label="Welcome to Timeless Temple Tours"><div class="container"><div class="content">
-    <span class="eyebrow">A family welcome from Luxor, Egypt</span>
-    <h1>Egypt has a story.<br><em>Come discover it.</em></h1>
-    <p>From the soaring columns of Karnak to the quiet waters of the Nile, let our local guides show you the places, people, and stories that make Upper Egypt unforgettable.</p>
-    <div class="hero-links"><a class="btn" href="#tours">Our tours <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#team">Meet our guides</a></div>
-  </div></div><span class="hero-caption">Clara &amp; Tarek · Timeless Temple Tours office</span></section>
-  <div class="trust-strip"><div class="container trust-grid"><span>Rooted in Luxor</span><span>History brought to life</span><span>Journeys with a personal touch</span></div></div>
-  <section class="intro" id="about"><div class="container intro-grid"><div>
-    <span class="eyebrow">Welcome to our Egypt</span><h2 class="section-title">Ancient places.<br>Local perspectives.</h2>
-    <p class="lead">We are a family-run tour company in the heart of Luxor, a place where remarkable history is part of everyday life. Our guides share the monumental sights and the quieter corners with the same warmth we would offer a visiting friend.</p>
-    <p class="lead">Whether you're standing beneath a pharaoh's obelisk or watching the Nile turn gold at sunset, we believe the best journeys leave you with more than photographs.</p>
-  </div><div class="intro-side"><p class="quote">“The best stories aren't always written in guidebooks.”</p><span>The Timeless Temple Tours way</span></div></div></section>
-  <section class="tours" id="tours"><div class="container"><div class="section-top">
-    <span class="eyebrow">Explore with us</span><h2 class="section-title">Our signature experiences</h2><p class="lead">Three of our favorite ways to see a different side of Luxor.</p>
-  </div><div class="cards">
-    <article class="tour-card tour-karnak"><div class="tour-img"><img src="assets/karnak.webp" alt="Clara standing among the ancient columns of Karnak Temple" loading="lazy" width="1024" height="1536"><span class="tour-tag">Temples &amp; history</span></div><div class="tour-content"><h3>Karnak &amp; the Temples of Thebes</h3><p>Walk beneath monumental columns, past ram-headed sphinxes, and into the heart of ancient Egypt.</p><details><summary>Experience highlights</summary><ul><li>Karnak's monumental hypostyle hall</li><li>Obelisks and sacred lake</li><li>The stories behind the carved stone</li></ul></details></div></article>
-    <article class="tour-card tour-felucca"><div class="tour-img"><img src="assets/felucca-hatshepsut.webp" alt="Illustrated Nile felucca with the terraces of Hatshepsut’s temple against the western cliffs" loading="lazy" width="1200" height="650"><span class="tour-tag">The river</span></div><div class="tour-content"><h3>Felucca on the Nile</h3><p>Slow down and feel the rhythm of the river that has shaped life in Egypt for thousands of years.</p><details><summary>Experience highlights</summary><ul><li>Traditional river sailing</li><li>Village scenes and riverbank views</li><li>Sunlight over the western cliffs</li></ul></details></div></article>
-    <article class="tour-card tour-balloon"><div class="tour-img"><img src="assets/balloon-hatshepsut.webp" alt="Illustrated blue-and-gold checkerboard hot-air balloon with Hatshepsut’s temple in the distance" loading="lazy" width="1200" height="650"><span class="tour-tag">Sunrise skies</span></div><div class="tour-content"><h3>Above Luxor at Daybreak</h3><p>Trade the streets for the sky and watch the West Bank unfold beneath the first light of morning.</p><details><summary>Experience highlights</summary><ul><li>Pre-dawn balloon preparation</li><li>Views across the West Bank</li><li>A spectacular desert sunrise</li></ul></details></div></article>
-  </div></div></section>
-  <section class="team" id="team"><div class="container team-grid"><div class="team-photo"><img src="assets/office-clara-tarek.webp" alt="Clara and Tarek in the modest, historic Timeless Temple Tours office surrounded by archival photographs and glass display cases" loading="lazy" width="1448" height="1086"></div><div class="team-copy">
-    <span class="eyebrow">The familiar faces</span><h2 class="section-title">Guides who make you feel at home.</h2>
-    <p class="lead">Come by our office, and you're as likely to find an impromptu history lesson as you are a conversation about tomorrow's excursion. It's that personal touch that makes a trip memorable.</p>
-    <div class="mini-profiles"><div><strong>Clara</strong><span>Senior Tour Guide</span><p class="team-small">With advanced degrees in Egyptology and linguistics, Clara leads tours throughout Upper Egypt by land, water, and sky, bringing the region’s history and languages to life.</p></div><div><strong>Tarek</strong><span>Director of Tours</span><p class="team-small">One of Luxor’s most experienced guides, Tarek brings decades of local knowledge, warmth, and steady expertise to every excursion.</p></div></div>
-    <a href="#heritage" class="team-link">Discover our family history →</a>
-  </div></div></section>
-  <section class="heritage" id="heritage"><div class="container heritage-grid"><div class="archive-visual"><img src="assets/archive-detail.webp" alt="A sepia-toned archival photograph of early archaeological work displayed in the tour office" loading="lazy" width="850" height="693"><span class="archive-corner">Family office archive · photos c. 1900</span></div><div>
-    <span class="eyebrow">Our heritage</span><h2 class="section-title">Some pictures have stories still waiting to be told.</h2>
-    <p class="lead">Browse our office while you get set for your tour. Many photographs show the company founder, Girgis Gamal, at excavation sites around Luxor. These unique photographs capture some of the earliest images during the era of Egyptology at the turn of the century.</p>
-    <p class="lead">The photographs may have faded. The curiosity hasn't.</p>
-    <details class="heritage-note"><summary>Open a note from the archive</summary><p><span class="stamp">G. Gamal · 1914</span><br>An old inventory card records three photographic plates, each carefully wrapped in cloth. One location was left unmarked.</p></details>
-    <!-- A small secret for curious readers: ⲙⲟϣⲓ ⲛ̀ⲥⲁ ⲛⲉⲣⲙⲱⲟⲩⲓ -->
-  </div></div></section>
-  <section class="bottom-cta"><div class="container"><span class="eyebrow">Begin with a little curiosity</span><h2>There is always more to discover in Luxor.</h2><p>Ancient monuments, welcoming faces, and stories you might not expect. Find the experience that speaks to you.</p><a class="btn" href="#tours">Discover our experiences <span aria-hidden="true">→</span></a></div></section>
+<section aria-label="Welcome to Timeless Temple Tours" class="hero" id="top"><div class="container"><div class="content">
+<span class="eyebrow">A family welcome from Luxor, Egypt</span>
+<h1>Egypt has a story.<br/><em>Come discover it.</em></h1>
+<p>From the soaring columns of Karnak to the quiet waters of the Nile, let our local guides show you the places, people, and stories that make Upper Egypt unforgettable.</p>
+<div class="hero-links"><a class="btn" href="#tours">Our tours <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#team">Meet our guides</a></div>
+</div></div><span class="hero-caption">Clara &amp; Tarek · Timeless Temple Tours office</span></section>
+<div class="trust-strip"><div class="container trust-grid"><span>Rooted in Luxor</span><span>History brought to life</span><span>Journeys with a personal touch</span></div></div>
+<section class="intro" id="about"><div class="container intro-grid"><div>
+<span class="eyebrow">Welcome to our Egypt</span><h2 class="section-title">Ancient places.<br/>Local perspectives.</h2>
+<p class="lead">We are a family-run tour company in the heart of Luxor, a place where remarkable history is part of everyday life. Our guides share the monumental sights and the quieter corners with the same warmth we would offer a visiting friend.</p>
+<p class="lead">Whether you're standing beneath a pharaoh's obelisk or watching the Nile turn gold at sunset, we believe the best journeys leave you with more than photographs.</p>
+</div><div class="intro-side"><p class="quote">“The best stories aren't always written in guidebooks.”</p><span>The Timeless Temple Tours way</span></div></div></section>
+<section class="tours" id="tours"><div class="container"><div class="section-top">
+<span class="eyebrow">Explore with us</span><h2 class="section-title">Our signature experiences</h2><p class="lead">Three of our favorite ways to see a different side of Luxor.</p>
+</div><div class="cards">
+<article class="tour-card tour-karnak"><div class="tour-img"><img alt="Clara standing among the ancient columns of Karnak Temple" height="1536" loading="lazy" src="assets/karnak.webp" width="1024"/><span class="tour-tag">Temples &amp; history</span></div><div class="tour-content"><h3>Karnak &amp; the Temples of Thebes</h3><p>Walk beneath monumental columns, past ram-headed sphinxes, and into the heart of ancient Egypt.</p><details><summary>Experience highlights</summary><ul><li>Karnak's monumental hypostyle hall</li><li>Obelisks and sacred lake</li><li>The stories behind the carved stone</li></ul></details></div></article>
+<article class="tour-card tour-felucca"><div class="tour-img"><img alt="White-sailed felucca on the Nile beside the Karnak temple skyline at sunrise" height="941" loading="lazy" src="assets/felucca-hatshepsut.webp" width="1672"/><span class="tour-tag">The river</span></div><div class="tour-content"><h3>Felucca on the Nile</h3><p>Slow down and feel the rhythm of the river that has shaped life in Egypt for thousands of years.</p><details><summary>Experience highlights</summary><ul><li>Traditional river sailing</li><li>Village scenes and riverbank views</li><li>Sunlight over the western cliffs</li></ul></details></div></article>
+<article class="tour-card tour-balloon"><div class="tour-img"><img alt="Blue-and-gold checkerboard balloon over the Colossi of Memnon at sunrise" height="941" loading="lazy" src="assets/balloon-hatshepsut.webp" width="1672"/><span class="tour-tag">Sunrise skies</span></div><div class="tour-content"><h3>Above Luxor at Daybreak</h3><p>Trade the streets for the sky and watch the West Bank unfold beneath the first light of morning.</p><details><summary>Experience highlights</summary><ul><li>Pre-dawn balloon preparation</li><li>Views across the West Bank</li><li>A spectacular desert sunrise</li></ul></details></div></article>
+</div></div></section>
+<section class="team" id="team"><div class="container team-grid"><div class="team-photo"><img alt="Clara and Tarek in the modest, historic Timeless Temple Tours office surrounded by archival photographs and glass display cases" height="1086" loading="lazy" src="assets/office-clara-tarek.webp" width="1448"/></div><div class="team-copy">
+<span class="eyebrow">The familiar faces</span><h2 class="section-title">Guides who make you feel at home.</h2>
+<p class="lead">Come by our office, and you're as likely to find an impromptu history lesson as you are a conversation about tomorrow's excursion. It's that personal touch that makes a trip memorable.</p>
+
+<a class="team-link" href="#heritage">Discover our family history →</a>
+</div></div><div class="container"><div class="guide-grid"><article class="guide-card"><div class="guide-pic"><img alt="Clara, a Timeless Temple Tours guide" height="640" loading="lazy" src="assets/clara.webp" width="640"/></div><div class="guide-copy"><h3>Clara</h3><span class="guide-role">Senior Tour Guide</span><p>With advanced degrees in Egyptology and linguistics, Clara guides travelers through Upper Egypt by land, water, and sky. Her enthusiasm brings ancient history and language to life.</p></div></article><article class="guide-card"><div class="guide-pic"><img alt="Tarek, a Timeless Temple Tours guide" height="640" loading="lazy" src="assets/tarek.webp" width="640"/></div><div class="guide-copy"><h3>Tarek</h3><span class="guide-role">Director of Tours</span><p>One of Luxor’s most experienced guides, Tarek brings decades of knowledge, warm humor, and a steady hand to the details of every journey.</p></div></article><article class="guide-card"><div class="guide-pic"><img alt="Ali, a Timeless Temple Tours guide" height="640" loading="lazy" src="assets/ali-portrait.webp" width="640"/></div><div class="guide-copy"><h3>Ali</h3><span class="guide-role">Senior Tour Guide</span><p>With decades of experience exploring the temples of Upper Egypt, Ali believes history speaks for itself. If you’re looking for a no-nonsense tour without the extra fluff, Ali is your guy.</p></div></article></div></div></section>
+<section class="heritage" id="heritage"><div class="container heritage-grid"><div class="archive-visual"><img alt="A sepia-toned archival photograph of early archaeological work displayed in the tour office" height="693" loading="lazy" src="assets/archive-detail.webp" width="850"/><span class="archive-corner">Family office archive · photos c. 1900</span></div><div>
+<span class="eyebrow">Our heritage</span><h2 class="section-title">Some pictures have stories still waiting to be told.</h2>
+<p class="lead">Browse our office while you get set for your tour. Many photographs show the company founder, Girgis Gamal, at excavation sites around Luxor. These unique photographs capture some of the earliest images during the era of Egyptology at the turn of the century.</p>
+<p class="lead">The photographs may have faded. The curiosity hasn't.</p>
+<a class="btn heritage-gallery-button" href="gallery.html">View the heritage gallery  →</a><details class="heritage-note"><summary>Open a note from the archive</summary><p><span class="stamp">G. Gamal · 1914</span><br/>An old inventory card records three photographic plates, each carefully wrapped in cloth. One location was left unmarked.</p></details>
+<!-- A small secret for curious readers: ⲙⲟϣⲓ ⲛ̀ⲥⲁ ⲛⲉⲣⲙⲱⲟⲩⲓ -->
+</div></div></section>
+<section class="bottom-cta"><div class="container"><span class="eyebrow">Begin with a little curiosity</span><h2>There is always more to discover in Luxor.</h2><p>Ancient monuments, welcoming faces, and stories you might not expect. Find the experience that speaks to you.</p><a class="btn" href="#tours">Discover our experiences <span aria-hidden="true">→</span></a></div></section>
 </main>
-<footer><div class="container"><div class="footer-main"><div class="footer-brand"><img src="assets/ttt-logo.webp" alt="Timeless Temple Tours — Luxor, Egypt" width="230" height="150"><p>Luxor, Egypt · Discover more than you came looking for.</p></div><div class="footer-links"><a href="#top">Back to top</a><a href="#tours">Experiences</a><a href="#team">Our guides</a><a href="#heritage">Family archive</a></div></div>
+<footer><div class="container"><div class="footer-main"><div class="footer-brand"><img alt="Timeless Temple Tours — Luxor, Egypt" height="150" src="assets/ttt-logo.webp" width="230"/><p>Luxor, Egypt · Discover more than you came looking for.</p></div><div class="footer-links"><a href="#top">Back to top</a><a href="#tours">Experiences</a><a href="#team">Our guides</a><a href="#heritage">Family archive</a><a href="gallery.html">Heritage gallery</a></div></div>
 <p class="fineprint"><strong>About this website:</strong> Timeless Temple Tours is a fictional business created as part of the world of the novel <em>Search for the Lost Pyramidion</em>. The tour descriptions and staff are storytelling elements, not real services. No bookings or payments are accepted through this site.</p>
 <div class="copyright"><span>© 2026 Timeless Temple Tours · A story-world companion</span><span>Made for curious explorers</span></div></div></footer>
 <script>
